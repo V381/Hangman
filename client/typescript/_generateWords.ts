@@ -66,7 +66,6 @@ his
 home
 house
 how
-I
 if
 in
 into
@@ -284,7 +283,6 @@ money
 morning
 mother
 move
-Mrs.
 near
 night
 nothing
@@ -353,7 +351,7 @@ area
 ball
 beautiful
 beginning
-Bill
+bill
 birds
 blue
 boat
@@ -363,7 +361,7 @@ bring
 build
 building
 built
-can't
+cannnot
 care
 carefully
 carried
@@ -414,7 +412,7 @@ hot
 hour
 hundred
 ice
-Indian
+indian
 instead
 itself
 job
@@ -528,7 +526,7 @@ edge
 egg
 eight
 energy
-England
+england
 especially
 Europe
 exactly
@@ -542,24 +540,20 @@ flat
 fly
 forest
 free
-French
+french
 fun
-George
+george
 government
 grass
 grew
 hair
 happy
-he's
 heat
 history
 human
 inch
 information
 iron
-Jim
-Joe
-King
 larger
 late
 leg
@@ -626,7 +620,7 @@ suppose
 teacher
 thousand
 thus
-Tom
+tom
 travel
 trip
 trouble
@@ -643,7 +637,6 @@ won't
 wood
 wrote
 yellow
-you're
 yourself
 action
 addition
@@ -663,7 +656,7 @@ board
 Bob
 born
 break
-British
+british
 broken
 brother
 brown
@@ -683,7 +676,6 @@ corn
 corner
 cover
 cross
-Dan
 dead
 deal
 death
@@ -700,7 +692,7 @@ fill
 finger
 force
 forward
-France
+france
 fresh
 garden
 general
@@ -709,7 +701,7 @@ greater
 greatest
 guess
 happen
-Henry
+henry
 higher
 hit
 hole
@@ -725,7 +717,6 @@ lead
 led
 level
 love
-Mary
 material
 meant
 meat
@@ -785,7 +776,7 @@ team
 teeth
 temperature
 test
-there's
+there
 therefore
 thick
 thin
