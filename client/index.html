@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HangMan</title>
+        <meta name="description" content="HangMan game with multiple languages writen in TypeScript">
+        <link type="text/css" rel="stylesheet" href="client/stylesheets/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="client/assets/images/hangmanIcon.png" type="image/x-icon" />
+    </head>
+    <body>
+
+        <header>
+            <h1>Hangman</h1>
+        </header>
+
+        <main>
+            
+            <div class="container">
+                
+                <section class="hanglamp">
+
+                    <img src="client/assets/images/hanglamp.png" alt="hanglamp">
+
+                     <div class="hanglamp__hang-rope">
+                        <div class="hang-rope__hangman">
+                            <div class="hangman__head">
+                                <div class="head__eye-one"></div>
+                                <div class="head__eye-two"></div>
+                                <div class="head__face"></div>
+                            </div>
+
+                            <div class="hangman__body">
+                                
+                            </div>
+
+                            <div class="hangman__left-hand"></div>
+                            <div class="hangman__right-hand"></div>
+
+                            <div class="hangman__left-leg"></div>
+                            <div class="hangman__right-leg"></div>
+
+                        </div>
+                    </div>
+
+                </section>
+
+
+            <section class="gameNotice">
+                <div class="gameNotice__lost">
+                    <h1>You lose!</h1>
+                    <p>Play new game?</p>  
+                    <button class="lost__button">Get new word</button>  
+                </div>    
+
+                 <div class="gameNotice__win">
+                    <h1>You won!</h1>
+                    <p>Play new game?</p>  
+                    <button class="win__button">Get new word</button>  
+                </div> 
+
+            </section>    
+
+            <div class="clear"></div>
+            <div class="line"></div>
+
+
+            <section class="word-letters">
+                <h1>Word: </h1>
+                <ul class="word-letters__letters">
+
+                </ul>
+            </section>
+
+            <section class="alphabet">
+                
+            </section>
+
+            </div>
+
+        </main>
+    
+
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script>
+        SystemJS.import('client/typescript/app.js');
+    </script>
+
+
+    </body>
+</html>
