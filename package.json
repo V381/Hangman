@@ -1,6 +1,9 @@
 {
   "name": "Hangman_written_in_TypeScript",
   "version": "1.0.0",
+  "scripts": {
+    "start" : "node nodeServer.js"
+  },
   "dependencies": {
     "browser-sync": "^2.18.8",
     "express": "^4.15.0",
