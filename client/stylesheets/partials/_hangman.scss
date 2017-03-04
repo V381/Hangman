@@ -1,0 +1,88 @@
+@import '../mixins/_hangman-hands';
+@import '../variables/_variables';
+
+.hangman__head{
+    border: 4px solid $main_black;
+    width: 25px;
+    height: 15px;
+    position: absolute;
+    right: -34px;
+    bottom: -41px;
+    border-radius: 101%;
+    padding: 10px;
+    background-color: $main_black;
+    box-shadow: 2px 2px 2px $main_black;
+    color: $main_red;
+    opacity: 0 ;
+    transition: opacity 1s linear ;
+}
+
+.head__eye-one{
+    border: 1px solid $main_red;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    background-color: $main_red;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    left: 3px;
+}
+
+.head__eye-two{
+    border: 1px solid $main_red;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    background-color: $main_red;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    left: 5px;
+}
+
+
+.head__face{
+    border-top: 1px solid white;
+    width: 20px;
+    position : relative;
+    left: 3px;
+}
+
+
+.hangman__body{
+    padding: 60px;
+    border-right: 20px solid $main_black;
+    position: absolute;
+    left: 107px;
+    top: 101px;
+    opacity: 0 ;
+    transition: opacity 1s linear ;
+}
+
+
+.hangman__left-hand{
+    @include hangman_hands(40deg, 76px, -1px);
+    opacity: 0 ;
+    transition: opacity 1s linear ;
+}
+
+.hangman__right-hand{
+    @include hangman_hands(-40deg, 119px, -48px);
+    opacity: 0 ;
+    transition: opacity 1s linear ;
+}
+
+.hangman__left-leg{
+    @extend .hangman__left-hand;
+    top: 180px;
+    opacity: 0 ;
+    transition: opacity 1s linear ;
+}
+
+.hangman__right-leg{
+    @extend .hangman__right-hand;
+    top: 223px;
+    opacity: 0 ;
+    transition: opacity 1s linear ;
+}

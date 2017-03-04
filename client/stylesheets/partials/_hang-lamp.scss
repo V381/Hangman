@@ -1,0 +1,27 @@
+
+.hanglamp{
+    margin-top: 50px;
+    margin-left: 50px;
+    position: relative;
+    width: 40%;
+    float: left;
+    img{
+        width: 300px;
+    }
+    &:after{
+        clear: both;
+    }
+}
+
+
+.hanglamp__hang-rope{
+    position: absolute;
+    padding: 30px;
+    left: 0;
+    right: 0;
+    border-right : 15px solid black;
+    top: 0px;
+    width: 170px;
+}
+
+

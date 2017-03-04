@@ -1,0 +1,25 @@
+@import 'variables/_variables';
+@import 'partials/_header';
+@import 'partials/_hang-lamp';
+@import 'partials/_hangman.scss';
+@import 'partials/_alphabet';
+@import 'partials/_letters';
+@import 'partials/_gameNotice';
+@import 'partials/_reset';
+
+
+@include meyer-reset();
+
+.container{
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.line{
+    border-top: 5px solid $defaultbg;
+}
+
+.clear{
+    clear: both;
+}

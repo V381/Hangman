@@ -1,0 +1,8 @@
+@mixin hangman_hands($rotate, $top, $right){
+    padding: 35px;
+    border-right: 20px solid $main_black;
+    position: absolute;
+    transform: rotate($rotate);
+    right : $right;
+    top : $top;
+}

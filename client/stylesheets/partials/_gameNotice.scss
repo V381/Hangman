@@ -1,0 +1,55 @@
+
+@import '../variables/_variables';
+
+.gameNotice{
+    color: white;
+}
+
+.gameNotice__lost{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background-color: $defaultbg;
+    border-radius: 20px;
+    width: 30%;
+    opacity: 0.9;
+    display: none;
+    transition : 0.5s ease-in-out;
+    @media all and (max-width: 1000px){
+        width: 50%;
+    }
+    h1{
+        text-align: center;
+        font-size: 2em;
+        color: red;
+    }
+    p{
+        margin-bottom: 10px;
+    }
+    button{
+        width: 100%;
+        padding: 5px;
+        background-color: white;
+        font-size: 1em;
+        background-color: black;
+        color: white;
+        border: 1px solid grey;
+        margin-bottom: 10px;
+        transition : 0.5s ease-in-out;
+        &:hover{
+            cursor: pointer;
+            background-color: lighten(black, 40%);
+            transition : 0.5s ease-in-out;
+        }
+    }
+}
+
+
+.gameNotice__win{
+    @extend .gameNotice__lost;
+    h1{
+        color: green;
+    }
+}

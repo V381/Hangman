@@ -1,0 +1,26 @@
+@import '../variables/_variables';
+
+.alphabet{
+    button{
+        width: 30px;
+        height: 30px;
+        background-color: $defaultbg;
+        color: white;
+        border-radius: 50%;
+        font-weight: bold;
+        box-shadow: 4px 4px 4px black;
+        border : 1px solid black;
+        margin-left: 6.5px;
+        transition : 0.5s ease-in-out;
+        &:hover{
+            cursor: pointer;
+            transition : 0.5s ease-in-out;
+            background-color: lighten($defaultbg, 25%);
+        }
+    }
+    .wrong-letter{
+        button{
+            padding : 50px;
+        }
+    }
+}
