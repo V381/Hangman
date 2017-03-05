@@ -12,15 +12,17 @@ var CheckIfGameWon = (function () {
         // We reset letterCounter to 0 everytime winning notice is shown to prevent Bug
         setTimeout(function () {
             if (letters.style.textIndent === "0px") {
-                this.letterCounter++;
+                // this.letterCounter++;
+                letterCounter++;
                 this.showWinNotice();
             }
         }.bind(this), 100);
     };
     CheckIfGameWon.prototype.showWinNotice = function () {
-        if (this.letterCounter === this.letters.length) {
+        if (letterCounter === this.letters.length) {
             this.gameWinNotice.style.display = "block";
-            this.letterCounter = 0;
+            letterCounter = 0;
+            console.log(letterCounter);
         }
     };
     return CheckIfGameWon;
