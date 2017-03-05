@@ -528,7 +528,7 @@ eight
 energy
 england
 especially
-Europe
+europe
 exactly
 except
 explain
@@ -653,7 +653,7 @@ beyond
 bit
 blood
 board
-Bob
+bob
 born
 break
 british
