@@ -5,6 +5,7 @@ var CheckIfGameIsLost = (function () {
         this.gameNoticeLost = document.querySelector('.gameNotice__lost');
         this.letters = document.querySelector('.word-letters__letters').children;
     }
+    
     CheckIfGameIsLost.prototype.showLoseNotice = function () {
         this.gameNoticeLost.style.display = "block";
         this.showMissingLetters();
