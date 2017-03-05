@@ -2,6 +2,7 @@ export class CheckIfGameWon{
     gameWinNotice = document.querySelector('.gameNotice__win');
     letters = document.querySelector('.word-letters').children[1].children
     letterCounter : number = 0;
+    
 
     checkIfAllLetersAreOnLines(letters):void{
         // Wait for letter to come to lines
@@ -11,16 +12,19 @@ export class CheckIfGameWon{
 
         setTimeout(function () {
             if (letters.style.textIndent === "0px") {
-                this.letterCounter++;
+                // this.letterCounter++;
+                letterCounter++;
                 this.showWinNotice();
             }
         }.bind(this), 100);
     }
 
     showWinNotice():void{
-        if(this.letterCounter === this.letters.length){
+        if(letterCounter === this.letters.length){
             this.gameWinNotice.style.display = "block";
-            this.letterCounter = 0;
+            letterCounter = 0;
+            console.log(letterCounter);
+            // this.letterCounter = 0;
         }
     }
 
