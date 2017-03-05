@@ -1,8 +1,6 @@
 import { GenerateHangman } from './_generateHangman.js';
 
-
 export class CheckIfGameIsLost{
-    hangManBodyParts : number = 0;
     gameNoticeLost = document.querySelector('.gameNotice__lost');
     letters = document.querySelector('.word-letters__letters').children;
 
