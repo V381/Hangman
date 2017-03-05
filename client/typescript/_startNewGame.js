@@ -1,9 +1,11 @@
 "use strict";
+/*
 var _generateAlphabet_js_1 = require('./_generateAlphabet.js');
 var _generateWords_js_1 = require('./_generateWords.js');
 var _checkForLetters_js_1 = require('./_checkForLetters.js');
 var _generateHangman_js_1 = require('./_generateHangman.js');
 var _checkIfGameIsLost_js_1 = require('./_checkIfGameIsLost.js');
+var _checkIfGameWon_js_1 = require('./_checkIfGameWon.js');
 var StartNewGame = (function () {
     function StartNewGame() {
         this.lostButton = document.querySelector('.lost__button');
@@ -15,13 +17,14 @@ var StartNewGame = (function () {
         this.generateHangman = new _generateHangman_js_1.GenerateHangman();
         this.checkForLetters = new _checkForLetters_js_1.CheckForLetters();
         this.checkIfGameLost = new _checkIfGameIsLost_js_1.CheckIfGameIsLost();
+        this.checkIfGameWon = new _checkIfGameWon_js_1.CheckIfGameWon();
     }
     StartNewGame.prototype.startNewGameIfLost = function () {
         var _this = this;
         this.lostButton.addEventListener('click', function () {
             _this.gameNoticeLost.style.display = 'none;';
-            _this.generateWords.generateEnglishWords();
             _this.generateAlphabet.generateAlphabetButtons();
+            _this.generateWords.generateEnglishWords();
             _this.generateHangman.hideBodyParts();
             _this.checkForLetters.checkForLetterMatch();
             _this.removeGameNoticeLost();
@@ -49,3 +52,4 @@ var StartNewGame = (function () {
     return StartNewGame;
 }());
 exports.StartNewGame = StartNewGame;
+*/
