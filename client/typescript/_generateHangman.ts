@@ -1,9 +1,11 @@
 import { CheckIfGameIsLost } from './_checkIfGameIsLost.js';
-
+import { CheckIfGameWon } from './_checkIfGameWon.js';
 
 export class GenerateHangman {
     getHangman = document.querySelector('.hang-rope__hangman').children;
-    checkIfGameLost = new CheckIfGameIsLost();
+    // hangManBodyParts : number = 0;
+
+    checkIfGameIsLost = new CheckIfGameIsLost();
 
     hideBodyParts(){
         for(let i = 0; i < this.getHangman.length; i++){
@@ -13,7 +15,6 @@ export class GenerateHangman {
 
     showBodyParts(buttons):void{
         // Wait for style to change
-
         
         setTimeout(() => {
 
@@ -21,19 +22,19 @@ export class GenerateHangman {
 
             if(buttons.style.backgroundColor === 'red'){
                 this.preventNoticeOnWrongButton();
-                this.getHangman[this.checkIfGameLost.hangManBodyParts].setAttribute('style', 'opacity: 1');
-                this.checkIfGameLost.hangManBodyParts++;
+                this.getHangman[hangManBodyCounter].setAttribute('style', 'opacity: 1');
+                hangManBodyCounter++;
             }
-            if(this.checkIfGameLost.hangManBodyParts === 6){
-                this.checkIfGameLost.showLoseNotice();
+            if(hangManBodyCounter === 6){
+                this.checkIfGameIsLost.showLoseNotice();
             }
 
         }, 100)
     }
 
     preventNoticeOnWrongButton(){
-        if(this.checkIfGameLost.hangManBodyParts === 6){
-            this.checkIfGameLost.hangManBodyParts = 0;
+        if(hangManBodyCounter === 6){
+            hangManBodyCounter = 0;
         }
     }
 
