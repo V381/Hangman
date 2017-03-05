@@ -3,7 +3,8 @@ var _checkIfGameIsLost_js_1 = require('./_checkIfGameIsLost.js');
 var GenerateHangman = (function () {
     function GenerateHangman() {
         this.getHangman = document.querySelector('.hang-rope__hangman').children;
-        this.checkIfGameLost = new _checkIfGameIsLost_js_1.CheckIfGameIsLost();
+        // hangManBodyParts : number = 0;
+        this.checkIfGameIsLost = new _checkIfGameIsLost_js_1.CheckIfGameIsLost();
     }
     GenerateHangman.prototype.hideBodyParts = function () {
         for (var i = 0; i < this.getHangman.length; i++) {
@@ -17,17 +18,17 @@ var GenerateHangman = (function () {
             _this.preventNoticeOnWrongButton();
             if (buttons.style.backgroundColor === 'red') {
                 _this.preventNoticeOnWrongButton();
-                _this.getHangman[_this.checkIfGameLost.hangManBodyParts].setAttribute('style', 'opacity: 1');
-                _this.checkIfGameLost.hangManBodyParts++;
+                _this.getHangman[hangManBodyCounter].setAttribute('style', 'opacity: 1');
+                hangManBodyCounter++;
             }
-            if (_this.checkIfGameLost.hangManBodyParts === 6) {
-                _this.checkIfGameLost.showLoseNotice();
+            if (hangManBodyCounter === 6) {
+                _this.checkIfGameIsLost.showLoseNotice();
             }
         }, 100);
     };
     GenerateHangman.prototype.preventNoticeOnWrongButton = function () {
-        if (this.checkIfGameLost.hangManBodyParts === 6) {
-            this.checkIfGameLost.hangManBodyParts = 0;
+        if (hangManBodyCounter === 6) {
+            hangManBodyCounter = 0;
         }
     };
     return GenerateHangman;
